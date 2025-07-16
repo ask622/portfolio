@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A ( '.' ) S</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="shortcut icon" href="pic.png" type="image/x-icon" />
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">AAKASH</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, it's me</h3>
+      <h1>AAKASH</h1>
+      <h3>And I am a <span class="multiple-text">Frontend Developer</span></h3>
+
+      <div class="social-media">
+        <a href="mailto:aakash197516@gmail.com" class="fa fa-envelope" title="Mail Me"></a>
+        <a href="https://github.com/ask622" class="fa fa-github" title="GitHub" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/aakash-59715b257/" class="fa fa-linkedin" title="LinkedIn" target="_blank"></a>
+        <a href="https://leetcode.com/u/ask622/" class="fa fa-code" title="LeetCode" target="_blank"></a>
+      </div>
+      <a href="aakaash-4.pdf" class="btn" download="cv.pdf">Download CV</a>
+    </div>
+    <div class="home_img">
+      <img src="img.jpeg" alt="profile-pic" />
+    </div>
+  </section>
+
+  <!-- ABOUT Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="aak.png" alt="" class="box" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>
+        I am AAKASH. I am from Bijnor, Uttar Pradesh. I am currently studying BCA (Data Science) at Dev Bhoomi Uttarakhand University. This is my first website design. I am a fresher in this field.
+        Also, a data enthusiast who built a model to predict customer churn using Python and created dashboards using Excel.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES Section -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>    
+        <h3>Frontend Development</h3>
+        <p>Frontend development involves creating the visual and interactive aspects of a website using technologies like HTML, CSS, and JavaScript to ensure a seamless user experience.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-server"></i>    
+        <h3>Backend Development</h3>
+        <p>Backend development focuses on server-side logic, databases, and APIs to ensure the functionality and performance of web applications.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-world"></i>   
+        <h3>Full-Stack Development</h3>
+        <p>Full-stack development combines both frontend and backend development to build complete, dynamic, and scalable web applications.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO Section -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="photo1 (1).png" alt="Food Delivery Project Screenshot">
+        <div class="portfolio-layer">
+          <h4>Food Delivery</h4>
+          <p>The food delivery web pages. Best Online Food Delivery service in India.</p>
+          <a href="https://foodwebpages.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="yatraventure.png" alt="Yatraventure Project Screenshot">
+        <div class="portfolio-layer">
+          <h4>Yatraventure</h4>
+          <p>A React-based travel website that helps users plan and book their adventures. Features include dynamic routing, API integration, and responsive design.</p>
+          <a href="https://tour-management-akws.onrender.com" target="_blank"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS Section -->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skill-box"><h3>HTML</h3><div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div></div>
+      <div class="skill-box"><h3>CSS</h3><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
+      <div class="skill-box"><h3>JavaScript</h3><div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></div>
+      <div class="skill-box"><h3>React</h3><div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div></div>
+      <div class="skill-box"><h3>Node.js</h3><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form id="contactForm" method="POST">
+      <p class="input-box">
+        <input type="text" name="fullName" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+      </p>
+      <p class="input-box">
+        <input type="number" name="mobile" placeholder="Mobile Number" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+      </p>
+      <p>
+        <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+      </p>
+      <p>
+        <button type="submit" class="btn">Send</button>
+      </p>
+    </form>
+
+    <!-- Success Message -->
+    <div id="successMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+      Thank you! Your message has been sent successfully.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Aakash | All Rights Reserved</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
