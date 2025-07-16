@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const response = await fetch('http://localhost:4000/contact', {
+      const response = await fetch('https://portfolio-8eze.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
