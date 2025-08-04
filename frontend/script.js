@@ -1,4 +1,5 @@
-// Menu Toggle
+
+// ===== Menu Toggle =====
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,7 +8,7 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
 
-// Scroll Sections Active Link
+// ===== Scroll Sections Active Link =====
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.header nav a');
 
@@ -35,7 +36,7 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
-// Scroll Reveal
+// ===== Scroll Reveal =====
 ScrollReveal({
   reset: true,
   distance: '80px',
@@ -50,10 +51,17 @@ ScrollReveal().reveal(
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-// Typed.js
+// ===== Typed.js (If you're using it, initialize here) =====
+// Example:
+// const typed = new Typed('.multiple-text', {
+//   strings: ['Developer', 'Designer'],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   backDelay: 1000,
+//   loop: true
+// });
 
-
-// Contact Form Submission
+// ===== Contact Form Submission =====
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const successMessage = document.getElementById('successMessage');
@@ -70,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const response = await fetch('https://portfolio-8eze.onrender.com', {
+      const response = await fetch('https://portfolio-gz9k.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const data = await response.json();
 
-      if (response.ok && data.success) {
+      if (response.ok) {
         successMessage.style.display = 'block';
         form.reset();
       } else {
@@ -92,6 +100,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-
-
