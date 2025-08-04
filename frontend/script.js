@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      const response = await fetch('https://portfolio-8eze.onrender.com/', {
+      const response = await fetch('https://portfolio-8eze.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -92,4 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
